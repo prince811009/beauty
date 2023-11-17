@@ -178,7 +178,7 @@ body.dk-open-fullscreen {
 .bg-image img {
     width: 100%;
     height: 100%;
-    font-family: "object-fit: cover";
+    font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -396,7 +396,7 @@ html {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5;
     color: #5e5e5e;
     letter-spacing: .03em;
@@ -432,7 +432,7 @@ h6,
 .h5,
 .h6 {
     margin-bottom: 1.5rem;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #131313;
     text-transform: none;
@@ -2762,7 +2762,7 @@ h6,
             align-items: center;
     height: 100px;
     padding: 29px 35px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #fff;
     -webkit-box-shadow: 0 1px 0 transparent;
             box-shadow: 0 1px 0 transparent;
@@ -2970,8 +2970,9 @@ h6,
 }
 
 .dk-navbar .dk-nav-content .dk-nav-logo {
-    min-width: auto;
-    font-family: "Playball", cursive;
+    /*min-width: auto; */
+    min-width: 250px;
+    font-family: "Poppins", sans-serif;
     font-size: 1.85rem;
     line-height: 1;
     color: #131313;
@@ -3649,7 +3650,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
 .dk-portfolio-item .dk-portfolio-item-image img {
     width: calc(100% + 1px);
     height: calc(100% + 1px);
-    font-family: "object-fit: cover";
+    font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -3675,6 +3676,20 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
         -ms-flex-pack: end;
             justify-content: flex-end;
     z-index: 1;
+}
+
+.dk-portfolio-item .dk-portfolio-item-info .dk-portfolio-item-more {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+.dk-portfolio-item .dk-portfolio-item-info .dk-portfolio-item-more:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
 }
 
 .dk-portfolio-item .dk-portfolio-item-info .dk-portfolio-item-title {
@@ -4386,7 +4401,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
 .dk-widget,
 .dk-widget-footer {
     overflow: hidden;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .dk-widget ~ .dk-widget,
@@ -4843,7 +4858,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     display: inline-block;
     padding: 11px 26px;
     margin: 0;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 700;
     line-height: normal;
@@ -5354,7 +5369,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
  ----------------------------*/
 .dk-blockquote {
     margin-bottom: 1.5rem;
-    font-family: "PT Serif", serif;
+    font-family: "Poppins", sans-serif;
     font-style: italic;
     font-weight: 700;
     color: #131313;
@@ -5373,7 +5388,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
 .dk-gallery .dk-gallery-item > img {
     width: 100%;
     height: 100%;
-    font-family: "object-fit: cover";
+    font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
     -webkit-transition: -webkit-transform .4s ease;
@@ -5454,7 +5469,7 @@ button:focus {
 .dk-form .form-control {
     height: 50px;
     padding: 12px 20px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #5e5e5e;
     text-align: left;
     text-transform: none;
@@ -5506,7 +5521,7 @@ button:focus {
 }
 
 .dk-form label {
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: .9rem;
     text-transform: uppercase;
 }
@@ -5621,7 +5636,7 @@ button:focus {
 .dk-blog-grid .dk-blog-img img {
     width: 100%;
     height: 100%;
-    font-family: "object-fit: cover";
+    font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
     -webkit-transition: -webkit-transform .4s ease;
@@ -6389,7 +6404,7 @@ button:focus {
     width: 100%;
     height: 100%;
     max-height: 670px;
-    font-family: "object-fit: cover";
+    font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
 }
