@@ -1,2 +1,469 @@
 /* PLACE YOU CUSTOM STYLES IN THIS FILE */
+body {
+    text-decoration: none;
+}
 
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .section-bg {
+    background-color: #f6f9fe;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: #106eea;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+  .section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .section-title h3 span {
+    color: #106eea;
+  }
+  
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+    padding: 60px 0;
+  }
+  
+  .team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  }
+  
+  .team .member .member-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+  }
+  
+  .team .member .social p {
+    transition: color 0.3s;
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.384);
+    padding: 10px 30px;
+  }
+  
+  .team .member .member-info {
+    padding: 25px 15px;
+  }
+  
+  .team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #222222;
+  }
+  
+  .team .member .member-info p {
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .team .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+
+
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  .featured-services .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  
+  .featured-services .icon-box:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+  }
+  
+  .featured-services .featured-services-img img {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .featured-services .icon {
+    margin-bottom: 15px;
+  }
+  
+  .featured-services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #106eea;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .featured-services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .featured-services .title a {
+    color: #111;
+  }
+  
+  .featured-services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  
+  .featured-services .icon-box:hover .title a,
+  .featured-services .icon-box:hover .description {
+    color: #fff;
+  }
+  
+  .featured-services .icon-box:hover .icon i {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Counts
+  --------------------------------------------------------------*/
+  .counts {
+    padding: 0px 0 60px;
+  }
+  
+  .counts .count-box {
+    padding: 35px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #f1f6fe;
+    margin: 5px 0px;
+  }
+  
+  .counts .count-box i {
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: #106eea;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    line-height: 0;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #062b5b;
+  }
+  
+  .counts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  
+  .counts .count-box h4 {
+    font-weight: 600;
+  }
+  
+  .counts .img-info {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Info
+  --------------------------------------------------------------*/
+  .Info {
+    padding: 60px 0;
+  }
+  
+  .Info .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  }
+  
+  .Info .member .member-img {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0px 10px 10px;
+  }
+  
+  .Info .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+  }
+  
+  .Info .member .social p {
+    transition: color 0.3s;
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.384);
+    padding: 10px 30px;
+  }
+  
+  .Info .member .member-info {
+    padding: 25px 15px;
+  }
+  
+  .Info .member .member-info h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #000000;
+    padding: 10px;
+    background: #c4dffb;
+    border-radius: 3px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .Info .member .member-info h4 {
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 16px;
+    text-align: center;
+    }
+  
+  .Info .member .member-info p {
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .Info .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }  
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing .box h3 {
+    font-weight: 400;
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #d78f8f;
+  }
+  
+  .pricing .box h4 {
+    font-size: 36px;
+    color: #106eea;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .pricing .box p {
+    color: #d78f8f;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .pricing .box h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+  
+  .pricing .box h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .pricing .box ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .pricing .box ul li {
+    padding-bottom: 16px;
+  }
+  
+  .pricing .box ul i {
+    color: #106eea;
+    font-size: 18px;
+    padding-right: 4px;
+  }
+  
+  .pricing .box ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+  
+  .pricing .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .pricing .btn-buy {
+    background: #106eea;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .pricing .btn-buy-advanced {
+    background: #d78f8f;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .pricing .btn-buy:hover {
+    background: #3b8af2;
+  }
+  
+  .pricing .btn-buy-advanced:hover {
+    background: #e4a3a3;
+  }
+
+  .pricing .featured h3 {
+    color: #fff;
+    background: #3b8af2;
+  }
+  
+  .pricing .advanced {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #fff;
+    color: #d78f8f;
+  }
