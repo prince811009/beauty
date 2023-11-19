@@ -5198,6 +5198,14 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     padding: 110px 0 110px;
 }
 
+.dk-box-2-top {
+    padding: 110px 0 0 0;
+}
+
+.dk-box-2-bottom {
+    padding: 0 0 110px 0;
+}
+
 .dk-box-2.dk-padding-top {
     padding: 110px 0 0;
 }
