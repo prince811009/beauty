@@ -307,6 +307,18 @@ section {
     line-height: 22px;
     margin-bottom: 20px;
   }
+
+  .Info .member .member-info h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000000;
+    padding: 10px;
+    background: #c4dffb;
+    border-radius: 3px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
   
   .Info .member .member-info h4 {
     line-height: 20px;
