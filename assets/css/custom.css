@@ -126,6 +126,79 @@ section {
     bottom: 15px;
   }
 
+  /*--------------------------------------------------------------
+# social-media
+--------------------------------------------------------------*/
+.social-media .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.social-media .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.social-media .icon-box:hover::before {
+  background: #c3a58b;
+  top: 0;
+  border-radius: 0px;
+}
+
+.social-media {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+.social-media .icon {
+  margin-bottom: 15px;
+}
+
+.social-media .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #c3a58b;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.social-media .title a {
+  color: #111;
+}
+
+.social-media.description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.social-media .icon-box:hover .title a,
+.social-media .icon-box:hover .description {
+  color: #fff;
+}
+
+.social-media .icon-box:hover .icon i {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Featured Services
