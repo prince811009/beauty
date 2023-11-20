@@ -1,6 +1,8 @@
 /* PLACE YOU CUSTOM STYLES IN THIS FILE */
 body {
     text-decoration: none;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -14,7 +16,7 @@ section {
   }
   
   .section-bg {
-    background-color: #f6f9fe;
+    background-color: #f3f3f3;
   }
   
   .section-title {
@@ -28,7 +30,7 @@ section {
     font-weight: 700;
     padding: 8px 20px;
     margin: 0;
-    background: #e7f1fd;
+    background: #c3a58b;
     color: #106eea;
     display: inline-block;
     text-transform: uppercase;
@@ -42,7 +44,7 @@ section {
   }
   
   .section-title h3 span {
-    color: #106eea;
+    color: #c3a58b;
   }
   
   .section-title p {
@@ -56,6 +58,9 @@ section {
     }
   }
 
+.text-pink {
+  color: #c3a58b;
+}
 
 
 /*--------------------------------------------------------------
@@ -149,7 +154,7 @@ section {
   }
   
   .featured-services .icon-box:hover::before {
-    background: #106eea;
+    background: #c3a58b;
     top: 0;
     border-radius: 0px;
   }
@@ -166,7 +171,7 @@ section {
   .featured-services .icon i {
     font-size: 48px;
     line-height: 1;
-    color: #106eea;
+    color: #c3a58b;
     transition: all 0.3s ease-in-out;
   }
   
