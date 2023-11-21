@@ -772,80 +772,62 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
-.faq-container {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+.accordions {
+  width: 100%;
+  margin: 40px auto;
 }
 
-.faq {
-  box-sizing: border-box;
-  background: transparent;
-  padding: 30px 22px;
-  position: relative;
-  overflow: hidden;
+.accordion-item {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.faq:not(:first-child) {
-  border-top: 1px solid #e6e6e6;
-}
-
-.faq-title {
-  margin: 0 35px 0 0;
-}
-
-.faq-text {
-  margin: 30px 0 0;
-  display: none;
-  line-height: 1.5rem;
-}
-
-.faq.active {
-  background-color: #f8f8f8;
-  box-shadow: inset 4px 0px 0px 0px #bf9267;
-}
-
-.faq.active .faq-title {
-  color: #bf9267;
-}
-
-.faq.active .faq-text {
-  display: block;
-}
-
-.faq-toggle {
-  background-color: transparent;
-  border: 1px solid #e6e6e6;
-  color: inherit;
-  border-radius: 50%;
+.accordion-item .accordion-title {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  padding-top: 3px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
-  transition: 0.3s ease;
+  padding: 20px;
+  transition: all 0.4s;
+  border-radius: 5px 5px 0 0;
 }
 
-.faq-toggle:focus {
-  outline: none;
-}
-
-.faq.active .faq-toggle {
-  transform: rotate(180deg);
-  background-color: #bf9267;
-  border-color: #bf9267;
+.accordion-item .accordion-title.active-title {
+  background-color: #dec8b2;
   color: #fff;
 }
 
+.accordion-item .accordion-title h2 {
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down {
+  transform: rotate(0);
+  transition: 0.4s;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+  transform: rotate(-180deg);
+}
+
+.accordion-item .accordion-content {
+  display: none;
+  line-height: 1.7;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+}
+
+.accordion-item .accordion-content.active {
+  display: block;
+}
+
+.accordion-item .accordion-content p {
+  margin: 0;
+}
 
   /*--------------------------------------------------------------
 # Contact
