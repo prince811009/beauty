@@ -3,6 +3,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 
 
@@ -30,7 +31,7 @@ section {
     font-weight: 700;
     padding: 8px 20px;
     margin: 0;
-    background: #c3a58b;
+    background: #bf9267;
     color: #106eea;
     display: inline-block;
     text-transform: uppercase;
@@ -44,7 +45,7 @@ section {
   }
   
   .section-title h3 span {
-    color: #c3a58b;
+    color: #bf9267;
   }
   
   .section-title p {
@@ -59,7 +60,7 @@ section {
   }
 
 .text-pink {
-  color: #c3a58b;
+  color: #bf9267;
 }
 
 
@@ -126,6 +127,10 @@ section {
     bottom: 15px;
   }
 
+  .team .title a {
+    text-decoration: none;
+  }
+
   /*--------------------------------------------------------------
 # social-media
 --------------------------------------------------------------*/
@@ -153,14 +158,14 @@ section {
 }
 
 .social-media .icon-box:hover::before {
-  background: #c3a58b;
+  background: #bf9267;
   top: 0;
   border-radius: 0px;
 }
 
 .social-media {
   max-width: 100%;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .social-media .icon {
@@ -170,7 +175,7 @@ section {
 .social-media .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #c3a58b;
+  color: #bf9267;
   transition: all 0.3s ease-in-out;
 }
 
@@ -212,6 +217,7 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
+    margin: 10px 5px;
   }
   
   .featured-services .icon-box::before {
@@ -227,7 +233,7 @@ section {
   }
   
   .featured-services .icon-box:hover::before {
-    background: #c3a58b;
+    background: #bf9267;
     top: 0;
     border-radius: 0px;
   }
@@ -244,7 +250,7 @@ section {
   .featured-services .icon i {
     font-size: 48px;
     line-height: 1;
-    color: #c3a58b;
+    color: #bf9267;
     transition: all 0.3s ease-in-out;
   }
   
@@ -273,11 +279,15 @@ section {
     color: #fff;
   }
   
+  .featured-services .title a {
+    text-decoration: none;
+  }
+  
   /*--------------------------------------------------------------
   # Counts
   --------------------------------------------------------------*/
   .counts {
-    padding: 0px 0 60px;
+    padding: 60px 0;
   }
   
   .counts .count-box {
@@ -287,6 +297,7 @@ section {
     text-align: center;
     background: #f1f6fe;
     margin: 5px 0px;
+    border-radius: 5px;
   }
   
   .counts .count-box i {
@@ -761,64 +772,225 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
 .faq {
-    padding: 60px 0;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 30px 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq:not(:first-child) {
+  border-top: 1px solid #e6e6e6;
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  margin: 30px 0 0;
+  display: none;
+  line-height: 1.5rem;
+}
+
+.faq.active {
+  background-color: #f8f8f8;
+  box-shadow: inset 4px 0px 0px 0px #bf9267;
+}
+
+.faq.active .faq-title {
+  color: #bf9267;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding-top: 3px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  transition: 0.3s ease;
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq.active .faq-toggle {
+  transform: rotate(180deg);
+  background-color: #bf9267;
+  border-color: #bf9267;
+  color: #fff;
+}
+
+
+  /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  margin-top: 40px;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  padding: 20px 0 20px 0;
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.contact .info-box:hover {
+  background: #bf9267;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #bf9267;
+  padding: 8px;
+}
+
+.contact .info-box:hover i {
+  background: #bf9267;
+  color: #fff;
+}
+
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box:hover h3 {
+  color: #ffffff;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .info-box:hover p {
+  color: #ffffff;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+  padding: 30px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #106eea;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #106eea;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #3b8af2;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .faq .faq-list {
-    padding: 0;
-    list-style: none;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .faq .faq-list li {
-    border-bottom: 1px solid #d4e5fc;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .faq .faq-list .question {
-    display: block;
-    position: relative;
-    font-family: #106eea;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    padding-left: 25px;
-    cursor: pointer;
-    color: #0d58ba;
-    transition: 0.3s;
-  }
-  
-  .faq .faq-list i {
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    top: -2px;
-  }
-  
-  .faq .faq-list p {
-    margin-bottom: 0;
-    padding: 10px 0 0 25px;
-  }
-  
-  .faq .faq-list .icon-show {
-    display: none;
-  }
-  
-  .faq .faq-list .collapsed {
-    color: black;
-  }
-  
-  .faq .faq-list .collapsed:hover {
-    color: #106eea;
-  }
-  
-  .faq .faq-list .collapsed .icon-show {
-    display: inline-block;
-    transition: 0.6s;
-  }
-  
-  .faq .faq-list .collapsed .icon-close {
-    display: none;
-    transition: 0.6s;
-  }
+}
