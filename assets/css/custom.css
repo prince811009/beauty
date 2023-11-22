@@ -852,15 +852,30 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #bf9267;
+  color: #1f1f1f;
   padding: 8px;
+}
+
+.contact .info-box .bi-line {
+  color: #07b53b;
+}
+
+.contact .info-box .bi-facebook {
+  color: #106eea;
+}
+
+.contact .info-box .bi-instagram {
+  color: #d62976;
+}
+
+.contact .info-box .bx-envelope {
+  color: 	#3e65cf;
 }
 
 .contact .info-box:hover i {
   background: #bf9267;
   color: #fff;
 }
-
 
 .contact .info-box h3 {
   font-size: 20px;
