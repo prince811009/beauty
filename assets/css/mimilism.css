@@ -498,7 +498,7 @@ h6,
 
 /* Lead */
 .lead {
-    font-size: 1.14rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -2967,7 +2967,7 @@ h6,
 
 .dk-navbar .dk-nav-content .dk-nav a {
     padding: 10px 0;
-    font-size: .89rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #131313;
     text-transform: uppercase;
@@ -4373,7 +4373,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
  -------------------------------------------------------------------*/
 .dk-footer {
     position: relative;
-    background-color: #e6dfd7;
+    background-color: #e7cccc;
     z-index: 1;
     color: #000;
 }
@@ -4897,7 +4897,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background-color: #dec8b2;
+    background-color: #d78f8f;
     border: 0;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
