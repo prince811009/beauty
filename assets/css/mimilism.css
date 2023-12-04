@@ -434,7 +434,7 @@ h6,
 .h6 {
     margin-bottom: 1.5rem;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: #131313;
     text-transform: none;
     letter-spacing: normal;
@@ -2968,7 +2968,7 @@ h6,
 .dk-navbar .dk-nav-content .dk-nav a {
     padding: 10px 0;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #131313;
     text-transform: uppercase;
     letter-spacing: .02em;
@@ -4373,13 +4373,13 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
  -------------------------------------------------------------------*/
 .dk-footer {
     position: relative;
-    background-color: #ddd3d3;
+    background-color: #cd9191;
     z-index: 1;
-    color: #000;
+    color: #ffffff;
 }
 
 .dk-footer .container h3 {
-    color: #000;
+    color: #ffffff;
 }
 
 .dk-footer.dk-footer-light {
@@ -4880,11 +4880,11 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
 .dk-btn {
     position: relative;
     display: inline-block;
-    padding: 11px 26px;
+    padding: 8px 20px;
     margin: 0;
     font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     line-height: normal;
     color: #fff;
     text-align: center;
