@@ -253,55 +253,63 @@
             </div>
         </div>
 
-        <!-- ======= Contact Section ======= -->
-        <div id="contact" class="contact">
+         <!-- ======= Contact Section ======= -->
+         <div id="contact" class="contact">
             <div class="container" data-aos="fade-up">
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
     
                 <div class="col-lg-3 col-md-6">
-                <div class="info-box  mb-4">
-                    <i class="bi bi-line"></i>
-                    <h3>LINE 客服</h3>
-                    <p>@joannennaoj</p>
-                </div>
+                    <a target="_blank" href="https://lin.ee/2LWeuao" style="text-decoration: none;">
+                        <div class="info-box  mb-4">
+                            <i class="bi bi-line"></i>
+                            <h3>LINE 客服</h3>
+                            <p>@joannennaoj</p>
+                        </div>
+                    </a>
                 </div>
     
                 <div class="col-lg-3 col-md-6">
-                <div class="info-box mb-4">
-                    <i class="bi bi-facebook"></i>
-                    <h3>facebook</h3>
-                    <p>柴柴網頁設計</p>
-                </div>
+                    <a target="_blank" href="https://www.facebook.com/chaichaiweb" style="text-decoration: none;">
+                        <div class="info-box mb-4">
+                            <i class="bi bi-facebook"></i>
+                            <h3>facebook</h3>
+                            <p>柴柴網頁設計</p>
+                        </div>
+                    </a>
                 </div>
     
                 
                 <div class="col-lg-3 col-md-6">
-                <div class="info-box mb-4">
-                    <i class="bi bi-instagram"></i>
-                    <h3>Instagram</h3>
-                    <p>柴柴網頁設計</p>
-                </div>
+                    <a target="_blank" href="https://instagram.com/chaichaiweb?igshid=YzAwZjE1ZTI0Zg==" style="text-decoration: none;">
+                        <div class="info-box mb-4">
+                            <i class="bi bi-instagram"></i>
+                            <h3>Instagram</h3>
+                            <p>柴柴網頁設計</p>
+                        </div>
+                    </a>
                 </div>
     
                 <div class="col-lg-3 col-md-6">
-                <div class="info-box  mb-4">
-                    <i class="bx bx-envelope"></i>
-                    <h3>信箱</h3>
-                    <p>ssmdt1988@gmail.com</p>
-                </div>
+                    <a target="_blank" href = "mailto:ssmdt1988@gmail.com = Feedback&body = Message" style="text-decoration: none;">
+                        <div class="info-box mb-4">
+                            <i class="bx bx-envelope"></i>
+                            <h3>信箱</h3>
+                            <p>ssmdt1988@gmail.com</p>
+                        </div>
+                    </a>
                 </div>
     
             </div>
     
-            </div>
         </div>
-        <!-- End Contact Section -->
+    </div>
+    <!-- End Contact Section -->
 
         
     </div>
 
-      <!-- START: Footer -->
-      <footer class="dk-footer">
+     <!-- START: Footer -->
+     <footer class="dk-footer">
         <div class="dk-box-2">
             <div class="container">
                 <div class="row vertical-gap md-gap">
@@ -327,7 +335,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col d-none d-xl-block"></div>
                 </div>
             </div>
@@ -341,7 +348,6 @@
     <!-- END: Footer -->
 
   </div>
-
 
 
 <!-- START: Scripts -->
@@ -379,13 +385,32 @@
 
 <!-- Jquery Form -->
 <script src="assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+ 
+<!-- jQuery File -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
 <!-- The Mimilism -->
 <script src="assets/js/mimilism.min.js"></script>
 <script src="assets/js/mimilism-init.js"></script>
 <!-- END: Scripts -->
 
+<script>
+$(document).ready(function(){
+    $(".accordion-title").click(function(e){
+        var accordionitem = $(this).attr("data-tab");
+        $("#"+accordionitem).slideToggle().parent().siblings().find(".accordion-content").slideUp();
 
-    
+        $(this).toggleClass("active-title");
+        $("#"+accordionitem).parent().siblings().find(".accordion-title").removeClass("active-title");
+      
+        $("i.fa-chevron-down",this).toggleClass("chevron-top");
+        $("#"+accordionitem).parent().siblings().find(".accordion-title i.fa-chevron-down").removeClass("chevron-top");
+    });
+});  
+
+</script>
+
+   
 </body>
 </html>
