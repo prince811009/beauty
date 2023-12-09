@@ -265,8 +265,9 @@ a:hover {
 }
 
 .dk-list > li a {
-    color: #5e5e5e;
+    color: #5b84c2;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .dk-list > li a:hover, .dk-list > li a:focus {
@@ -3664,6 +3665,9 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     font-family: "Poppins", sans-serif;
     -o-object-fit: cover;
        object-fit: cover;
+    padding: 5px;
+    background: #ededed;
+    border-radius: 10px;
 }
 
 .dk-portfolio-item .dk-portfolio-item-image .dk-portfolio-item-image-size {
@@ -6129,6 +6133,9 @@ button:focus {
 
 .dk-swiper .swiper-slide .dk-swiper-slide img {
     max-width: 100%;
+    padding: 5px;
+    background: #ededed;
+    border-radius: 10px;
 }
 
 .dk-swiper .swiper-pagination {
