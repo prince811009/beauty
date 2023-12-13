@@ -85,7 +85,6 @@ section {
   color: #d78f8f;
 }
 
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -317,9 +316,10 @@ section {
     width: 100%;
     position: relative;
     text-align: center;
-    background: #f1f6fe;
+    background: #7ea5e5;
     margin: 5px 0px;
     border-radius: 5px;
+    color: white;
   }
   
   .counts .count-box i {
@@ -582,10 +582,10 @@ section {
     width: 200px;
     position: absolute;
     top: 18px;
-    right: -68px;
+    right: -40px;
     transform: rotate(45deg);
     z-index: 1;
-    font-size: 14px;
+    font-size: 17px;
     padding: 1px 0 3px 0;
     background: #fff;
     color: #d78f8f;
