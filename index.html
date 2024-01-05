@@ -6,7 +6,8 @@
     
 <html lang="zh">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>柴柴網頁設計 | 網頁設計, 網站架設, 個人形象網站, 品牌官網</title>
@@ -25,8 +26,6 @@
     <meta property="og:url" content="">
 
     <link rel="icon" type="image/png" href="assets/images/logo.ico">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- START: Styles -->
 
@@ -82,45 +81,68 @@
     <nav class="dk-navbar dk-navbar-fixed dk-navbar-transparent dk-navbar-white dk-navbar-lg-fullscreen">
         <div class="container">
             <div class="dk-nav-content">
-                <a href="index.html" class="dk-nav-logo">柴柴網頁設計.</a>                      
+                <a href="index.html" class="dk-nav-logo" data-i18n="logo-title"></a>                      
                 <ul class="dk-nav dk-nav-align-right">  
                     <li class="">
+                        <a href="index.html" data-i18n="nav-home">
+                            <!-- 首頁 -->
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="about-us.html" data-i18n="nav-about_us">
+                            <!-- 關於我們 -->
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="price.html" data-i18n="nav-price">
+                            <!-- 價格方案 -->
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="portfolio.html" data-i18n="nav-portfolio">
+                            <!-- 設計案例 -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html" data-i18n="nav-template">
+                            <!-- 我要選版型 -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cooperate.html" data-i18n="nav-cooperate">
+                            <!-- 合作方式與預約 -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="question.html" data-i18n="nav-question">
+                            <!-- 常見問題 -->
+                        </a>
+                    </li>
+                    <li class="dk-drop-item">
                         <a href="index.html">
-                            首頁
+                            Language
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="about-us.html">
-                            關於我們
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="price.html">
-                            價格方案
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="portfolio.html">
-                            設計案例
-                        </a>
-                    </li>
-                    <li>
-                        <a href="template.html">
-                            我要選版型
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cooperate.html">
-                            合作方式與預約
-                        </a>
-                    </li>
-                    <li>
-                        <a href="question.html">
-                            常見問題
-                        </a>
+                        <ul class="dk-dropdown">
+                                
+                            <li>
+                                <a href="index.html" onclick="changeLanguage('zh-Hant')">
+                                    繁體中文
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" onclick="changeLanguage('zh-Hans')">
+                                    简体中文
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" onclick="changeLanguage('en')">
+                                    English
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-                
+                               
             </div>
         </div>
     </nav>
@@ -152,9 +174,14 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-8">
-                    <h2 class="display-5 text-white">最適合專業工作室的</br>形象官網</h2>
-                    <p class="lead text-white">多款現代化網站設計</br>凸顯你的專業形象</p>
-                    <a href="https://lin.ee/2LWeuao" class="dk-btn dk-btn-hover-white dk-btn-md mt-20 bt-get-scrollto">我要詢問</a>
+                    <!-- 最適合專業工作室的形象官網 -->
+                    <h2 class="display-5 text-white" data-i18n="main-title"></h2>
+                    <!-- 多款現代化網站設計 -->
+                    <p class="lead text-white" data-i18n="main-dse"></br></p>
+                    <!-- 凸顯你的專業形象 -->
+                    <p class="lead text-white" data-i18n="main-dse-2"></br></p>
+                    <!-- 我要詢問 -->
+                    <a href="https://lin.ee/2LWeuao" class="dk-btn dk-btn-hover-white dk-btn-md mt-20 bt-get-scrollto" data-i18n="main-btn"></a>
                 </div>
             </div>
         </div>
@@ -166,9 +193,12 @@
             <div class="container" data-aos="fade-up">
     
                 <div class="section-title">
-                    <h2 class="text-white">專業必備</h2>
-                    <h3>選好樣式 <span>再付費!</span></h3>
-                    <h4 class="text-center m-20">多款現代化專業設計樣式</br>半客製化 | 彈性高 | CP值高</br>快速打造專業形象 ！</h4>
+                    <!-- 專業必備 -->
+                    <h2 class="text-white" data-i18n="featured-services-title"></h2>
+                    <!-- 選好樣式再付費! -->
+                    <h3 data-i18n="featured-services-des"></h3>
+                    <!-- 多款現代化專業設計樣式!半客製化 | 彈性高 | CP值高 快速打造專業形象！ -->
+                    <h4 class="text-center m-20" data-i18n="featured-services-des-2"></h4>
                 </div>
     
                 <div class="featured-services-img">
@@ -179,32 +209,40 @@
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"><i class="bx bx-devices"></i></div>
-                        <h4 class="title"><a href="">現代化網站設計</a></h4>
-                        <p class="description">不論你是使用電腦、平板或是手機，都能夠擁有現代化、簡約大方的網頁設計，讓你不用再煩惱自己架設網站的各種困難。</p>
+                        <!-- 現代化網站設計 -->
+                        <h4 class="title" data-i18n="featured-services-row-title-1"></h4>
+                        <!-- 不論你是使用電腦、平板或是手機，都能夠擁有現代化、簡約大方的網頁設計，讓你不用再煩惱自己架設網站的各種困難。 -->
+                        <p class="description" data-i18n="featured-services-row-des-1"></p>
                         </div>
                     </div>
                     
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon"><i class="bx bx-palette"></i></div>
-                        <h4 class="title"><a href="">多款設計師專業模版</a></h4>
-                        <p class="description">擔心設計總是不符合預計？或是設計費用太貴？可以直接挑選喜歡的網站樣式，找到最適合你的網頁設計！</p>
+                        <!-- 多款設計師專業模版 -->
+                        <h4 class="title" data-i18n="featured-services-row-title-2"></h4>
+                        <!-- 擔心設計總是不符合預計？或是設計費用太貴？可以直接挑選喜歡的網站樣式，找到最適合你的網頁設計！ -->
+                        <p class="description" data-i18n="featured-services-row-des-2"></p>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class="bx bx-dollar-circle"></i></div>
-                        <h4 class="title"><a href="">透明簡單的價格方案</a></h4>
-                        <p class="description">選好喜歡的方案再付款，租用價格最划算！不用擔心創業前期高額支出，月租方案讓你讓事業加速啟動。</p>
+                        <!-- 透明簡單的價格方案 -->
+                        <h4 class="title" data-i18n="featured-services-row-title-3"></h4>
+                        <!-- 選好喜歡的方案再付款，租用價格最划算！不用擔心創業前期高額支出，月租方案讓你讓事業加速啟動。 -->
+                        <p class="description" data-i18n="featured-services-row-des-3"></p>
                         </div>
                     </div>
     
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon"><i class="bx bx-time"></i></div>
-                        <h4 class="title"><a href="">時間就是金錢</a></h4>
-                        <p class="description">網頁設計一來一回溝通都要花費大量時間和成本，但現在只需選定喜歡的網站設計樣式，專業工程師團隊就會協助你完成網站，對創業者來說無往不利！</p>
+                        <!-- 時間就是金錢 -->
+                        <h4 class="title" data-i18n="featured-services-row-title-4"></h4>
+                        <!-- 網頁設計一來一回溝通都要花費大量時間和成本，但現在只需選定喜歡的網站設計樣式，專業工程師團隊就會協助你完成網站，對創業者來說無往不利！ -->
+                        <p class="description" data-i18n="featured-services-row-des-4"></p>
                         </div>
                     </div>
     
@@ -219,9 +257,12 @@
         <div class="container mnb-35">
 
             <div class="section-title">
-                <h2 class="text-white">多款設計</h2>
-                <h3>設計 <span>案例</span></h3>
-                <h4 class="text-center m-20">多款設計案例</br>&ensp;&ensp;直接選擇你喜歡的設計 ！</h4>
+                <!-- 多款設計 -->
+                <h2 class="text-white" data-i18n="design-section-title"></h2>
+                <!-- 設計案例 -->
+                <h3 data-i18n="design-section-des"></h3>
+                <!-- 多款設計案例, 直接選擇你喜歡的設計！ -->
+                <h4 class="text-center m-20" data-i18n="design-section-des-2"></h4>
             </div>
 
             <div class="row vertical-gap dk-gallery justify-content-center">
@@ -287,7 +328,8 @@
             
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-8 text-center">
-                    <a href="portfolio.html" class="dk-btn dk-btn-hover-white dk-btn-md mt-20 bt-get-scrollto">看更多案例</a>
+                    <!-- 看更多案例 -->
+                    <a href="portfolio.html" class="dk-btn dk-btn-hover-white dk-btn-md mt-20 bt-get-scrollto" data-i18n="design-section-btn"></a>
                 </div>
             </div>
 
@@ -295,37 +337,46 @@
     </div>
     <!-- ======= END 現代化與踐約設計 介紹 design Section ======= -->
 
-    <!-- ======= 網站優點 Section ======= -->
+    <!-- ======= 網站優點 advantage Section ======= -->
     <section id="team" class="team section-bg featured-services dk-box-2" style="background-color: #ffffff;">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2 class="text-white">特點與堅持</h2>
-                <h3>專業 <span class="text-pink">工程師團隊</span></h3>
-                <h5 class="text-center m-10">提供您安全的網站</h5>
+                <!-- 特點與堅持 -->
+                <h2 class="text-white" data-i18n="advantage-section-title"></h2>
+                <!-- 專業工程師團隊 -->
+                <h3 data-i18n="advantage-section-des"></h3>
+                <!-- 提供您安全的網站 -->
+                <h5 class="text-center m-10" data-i18n="advantage-section-des-2"></h5>
             </div>
 
             <div class="row">
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon"><i class="bx bx-like"></i></div>
-                    <h4 class="title"><a href="">專業工程師撰寫程式</a></h4>
-                    <p class="description">市面上部分網站公司會將專案委外製作，但我們皆由團隊的專業工程師親自撰寫程式碼，可更確保網站的安全與品質，更能夠進行客製化的需求。</p>
+                    <!-- 專業工程師撰寫程式 -->
+                    <h4 class="title" data-i18n="advantage-section-row-title-1"></h4>
+                    <!-- 市面上部分網站公司會將專案委外製作，但我們皆由團隊的專業工程師親自撰寫程式碼，可更確保網站的安全與品質，更能夠進行客製化的需求。 -->
+                    <p class="description" data-i18n="advantage-section-row-des-1"></p>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon"><i class="bx bx-list-check"></i></div>
-                    <h4 class="title"><a href="">提供安全的網站</a></h4>
-                    <p class="description">免費或開源的架站方式，容易有資安上的風險，我們團隊皆由工程師確認整體網站內容後，撰寫程式碼來建置網站，讓網站更有安全上的保障。</p>
+                    <!-- 提供安全的網站 -->
+                    <h4 class="title" data-i18n="advantage-section-row-title-2"></a></h4>
+                    <!-- 免費或開源的架站方式，容易有資安上的風險，我們團隊皆由工程師確認整體網站內容後，撰寫程式碼來建置網站，讓網站更有安全上的保障。 -->
+                    <p class="description" data-i18n="advantage-section-row-des-2"></p>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon"><i class="bx bx-group"></i></div>
-                    <h4 class="title"><a href="">便利的線上溝通方式</a></h4>
-                    <p class="description">我們了解許多專業技術者或是工作室團隊，已經非常習慣線上進行作業，我們團隊非常樂於進行全面性線上化，不僅縮短等待時間，更能夠讓雙方的溝通更加彈性與即時。</p>
+                    <!-- 便利的線上溝通方式 -->
+                    <h4 class="title" data-i18n="advantage-section-row-title-3"></h4>
+                    <!-- 我們了解許多專業技術者或是工作室團隊，已經非常習慣線上進行作業，我們團隊非常樂於進行全面性線上化，不僅縮短等待時間，更能夠讓雙方的溝通更加彈性與即時。-->
+                    <p class="description" data-i18n="advantage-section-row-des-3"></p>
                     </div>
                 </div>
             </div>
@@ -333,14 +384,17 @@
     </section>
     <!-- End Team Section -->
 
-    <!-- ======= 線上預約 ======= -->   
+    <!-- ======= 線上預約 reservation ======= -->   
     <div class="dk-box-1" style="background-color: #f3f3f3;">
         <div class="container">
 
             <div class="section-title text-center" style="margin-bottom: 0px;">
-                <h2 class="text-price">線上預約</h2>
-                <h3>預約 <span class="text-pink">網站製作</span></h3>
-                <h5 class="text-center m-10">如果沒有適合預約的時間</br>歡迎在 <span><a target="_blank" href="https://lin.ee/2LWeuao" style="color: rgb(0, 187, 0); font-weight: 800;">LINE官方</a></span> 聯繫我們聊聊喔 !</h5>
+                <!-- 線上預約 -->
+                <h2 class="text-price" data-i18n="reservation-section-title"></h2>
+                <!-- 預約網站製作 -->
+                <h3 data-i18n="reservation-section-des"></h3>
+                <!-- 如果沒有適合預約的時間歡迎在LINE官方聯繫我們聊聊喔 ! -->
+                <h5 class="text-center m-10" data-i18n="reservation-section-des-2"></h5>
             </div>
 
             <div class="row vertical-gap justify-content-between">
@@ -364,8 +418,10 @@
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-12">
-                    <h2 class="text-white mnt-8">最適合專業工作室的</br>形象官網</h2>
-                    <a href="https://lin.ee/2LWeuao" class="dk-btn dk-btn-hover-white dk-btn-md mt-15">我要詢問</a>
+                    <!-- 最適合專業工作室的形象官網 -->
+                    <h2 class="text-white mnt-8" data-i18n="footer-title"></h2>
+                    <!-- 我要詢問 -->
+                    <a href="https://lin.ee/2LWeuao" class="dk-btn dk-btn-hover-white dk-btn-md mt-15" data-i18n="footer-btn"></a>
                 </div>
             </div>
         </div>
@@ -379,8 +435,9 @@
                     <a target="_blank" href="https://lin.ee/2LWeuao" style="text-decoration: none;">
                         <div class="info-box  mb-4">
                             <i class="bi bi-line"></i>
-                            <h3>LINE 客服</h3>
-                            <p>@joannennaoj</p>
+                            <!-- LINE 客服 -->
+                            <h3 data-i18n="footer-social-line"></h3>
+                            <p>@057anqpt</p>
                         </div>
                     </a>
                 </div>
@@ -389,8 +446,9 @@
                     <a target="_blank" href="https://www.facebook.com/chaichaiweb" style="text-decoration: none;">
                         <div class="info-box mb-4">
                             <i class="bi bi-facebook"></i>
-                            <h3>facebook</h3>
-                            <p>柴柴網頁設計</p>
+                            <!-- Facebook -->
+                            <h3 data-i18n="footer-social-facebook"></h3>
+                            <p data-i18n="footer-social-facebook-info"></p>
                         </div>
                     </a>
                 </div>
@@ -400,8 +458,9 @@
                     <a target="_blank" href="https://instagram.com/chaichaiweb?igshid=YzAwZjE1ZTI0Zg==" style="text-decoration: none;">
                         <div class="info-box mb-4">
                             <i class="bi bi-instagram"></i>
-                            <h3>Instagram</h3>
-                            <p>柴柴網頁設計</p>
+                            <!-- Instagram -->
+                            <h3 data-i18n="footer-social-instagram"></h3>
+                            <p data-i18n="footer-social-instagram-info"></p>
                         </div>
                     </a>
                 </div>
@@ -410,7 +469,7 @@
                     <a target="_blank" href = "mailto:chaichaiweb.com@gmail.com = Feedback&body = Message" style="text-decoration: none;">
                         <div class="info-box mb-4">
                             <i class="bx bx-envelope"></i>
-                            <h3>信箱</h3>
+                            <h3 data-i18n="footer-social-email"></h3>
                             <p>chaichaiweb.com@gmail.com</p>
                         </div>
                     </a>
@@ -433,21 +492,24 @@
                     <div class="col-sm-6 col-md-6 col-lg col-xl-3">
                         <div class="dk-widget-footer">
                             <div class="dk-widget-title">
-                                <h3 class="h5">柴柴網頁設計</h3>
+                                <h3 class="h5" data-i18n="footer-bottom-title"></h3>
                             </div>
                             <div class="">
-                                <p>專注於實用、質感的網站</p>
+                                <p data-i18n="footer-bottom-des"></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-1 col-xl-2 d-none d-md-block d-lg-none d-xl-block"></div>
                     <div class="col-sm-6 col-md-auto">
                         <div class="dk-widget-footer">
-                            <div class="dk-widget-list">
+                            <div class="dk-widget-list">                                
                                 <ul>
-                                    <li>柴柴企業社</li>
-                                    <li>統一編號：89044277</li>
-                                    <li>法律顧問：陳信村律師事務所</li>
+                                    <!-- 柴柴企業社 -->
+                                    <li data-i18n="footer-bottom-law-1"></li>
+                                    <!-- 統一編號：89044277 -->
+                                    <li data-i18n="footer-bottom-law-2"></li>
+                                    <!-- 法律顧問：陳信村律師事務所 -->
+                                    <li data-i18n="footer-bottom-law-3"></li>
                                 </ul>
                             </div>
                         </div>
@@ -458,7 +520,7 @@
         </div>
         <div class="dk-footer-copyright text-white">
             <div class="container">
-                <p class="mb-0">&copy; 2023 柴柴網頁設計. All rights reserved.</p>
+                <p class="mb-0" data-i18n="footer-bottom-text"></p>
             </div>
         </div>
     </footer>
@@ -506,6 +568,9 @@
 <!-- The Mimilism -->
 <script src="assets/js/mimilism.min.js"></script>
 <script src="assets/js/mimilism-init.js"></script>
+
+<!-- i18n -->
+<script src="assets/js/script.js"></script>
 <!-- END: Scripts -->
 
 

@@ -148,7 +148,7 @@ body.dk-open-fullscreen {
     font-weight: 700;
     color: #131313;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-bottom: 2px solid #dec8b2;
     -webkit-transition: border-color .2s ease;
     -o-transition: border-color .2s ease;
@@ -222,7 +222,7 @@ a:hover {
     font-size: .84rem;
     font-weight: 700;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .dk-progress .dk-progress-title > span {
@@ -846,8 +846,8 @@ h6,
 /*
  * Text Transform Helper
  */
-.text-uppercase {
-    text-transform: uppercase !important;
+.text-capitalize {
+    text-transform: capitalize !important;
 }
 
 /*
@@ -2976,7 +2976,7 @@ h6,
     font-size: 1rem;
     font-weight: 500;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .02em;
 }
 
@@ -3727,7 +3727,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     margin: 0;
     font-size: .8rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .06em;
     -webkit-transition: color .3s ease;
     -o-transition: color .3s ease;
@@ -4336,7 +4336,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     font-size: .84rem;
     font-weight: 700;
     color: #858585;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .dk-reviews.dk-reviews-white .dk-reviews-text {
@@ -4371,7 +4371,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     margin-bottom: -4px;
     font-size: .84rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .06em;
 }
 
@@ -4897,7 +4897,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     line-height: normal;
     color: #fff;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .07em;
     white-space: nowrap;
     vertical-align: middle;
@@ -5179,7 +5179,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     margin: 6px 0 8px;
     font-size: .8rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .1em;
 }
 
@@ -5328,7 +5328,7 @@ div.dk-navbar-fullscreen.dk-navbar-fullscreen.dk-open-fullscreen .dk-navbar-burg
     min-width: 200px;
     font-size: .89rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
 }
 
@@ -5565,7 +5565,7 @@ button:focus {
 .dk-form label {
     font-family: "Poppins", sans-serif;
     font-size: .9rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .dk-form select.form-control:not([size]):not([multiple]) {
@@ -5724,7 +5724,7 @@ button:focus {
     font-size: .74rem;
     font-weight: 700;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .03em;
 }
 
@@ -5851,7 +5851,7 @@ button:focus {
     font-size: .74rem;
     font-weight: 700;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .03em;
 }
 
@@ -5879,7 +5879,7 @@ button:focus {
     font-size: .74rem;
     font-weight: 700;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .03em;
 }
 
@@ -6053,7 +6053,7 @@ button:focus {
     padding: 0 18px;
     font-size: .74rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .03em;
     white-space: nowrap;
 }
@@ -6073,7 +6073,7 @@ button:focus {
     font-size: .74rem;
     font-weight: 700;
     color: #131313;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .03em;
 }
 
@@ -6528,7 +6528,7 @@ button:focus {
     font-size: .82rem;
     font-weight: 700;
     color: #858585;
-    text-transform: uppercase;
+    text-transform: capitalize;
     list-style: none;
     cursor: pointer;
     -webkit-transition: color .3s ease;
