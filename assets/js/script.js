@@ -37,18 +37,23 @@ function toggleStylesheet(lang) {
   if (link) {
     head.removeChild(link); // Remove the old stylesheet link
   }
-  else if (lang === 'ar') {
-      const newLink = document.createElement('link');
-      newLink.id = 'styles-link';
-      newLink.rel = 'stylesheet';
-      head.appendChild(newLink);
-    }
+  else if (lang === 'en') {
+    const newLink = document.createElement('link');
+    newLink.id = 'styles-link';
+    newLink.rel = 'stylesheet';
+    head.appendChild(newLink);
+  } else if (lang === 'zh-Hans') {
+    const newLink = document.createElement('link');
+    newLink.id = 'styles-link';
+    newLink.rel = 'stylesheet';
+    head.appendChild(newLink);
+  }
 }
 
 
 // Call updateContent() on page load
 window.addEventListener('DOMContentLoaded', async () => {
-  const userPreferredLanguage = localStorage.getItem('language') || 'en';
+  const userPreferredLanguage = localStorage.getItem('language') || 'zh-Hant';
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
   toggleStylesheet(userPreferredLanguage);
