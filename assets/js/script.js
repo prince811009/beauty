@@ -28,9 +28,8 @@
 
   // Call updateContent() on page load
   window.addEventListener('DOMContentLoaded', async () => {
-    const userPreferredLanguage = localStorage.getItem('language') || 'zh-Han';
+    const userPreferredLanguage = localStorage.getItem('language') || 'zh-Hant';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
-    toggleArabicStylesheet(userPreferredLanguage);
   });
    
